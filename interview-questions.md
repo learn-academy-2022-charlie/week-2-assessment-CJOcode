@@ -54,28 +54,34 @@ Then, research the question to expand on your answer. Even if you feel you have 
     Object destructuring is taking a object and rearranging the contents to make it easier to access items and more understandable.
 
   Researched answer:
-    destructuring is a way for developers to pull codes out of arrays, objects or methods and assigning the values to a new variable. For example if we had an object that had keys that described a car we could assign the keys that describe paint color engine size and model to a variable named 
+    destructuring is a way for developers to pull codes out of arrays, objects or methods and assigning the values to a new variable. For example if we had an object that had keys that described a car we could assign the keys that describe paint color engine size and model to a variable then log the key names which would output the keys values.
 
 
 
 6. STRETCH: What is hoisting in JavaScript?
 
   Your answer:
+   a process of moving code around to make it more efficient.
 
   Researched answer:
-
+   is the process of moving variables, functions or classes to the top of the scope so that the execution of the code works properly. If variables that are being called are are below a console.log they will not be registered to the output because every thing flows from top to bottom. 
 
 
 ## Looking Ahead: Terms for Next Week
 
 Research and define the following terms to the best of your ability.
 
-1. Class Inheritance:
+1. Class Inheritance: 
+  Class inheritance is when we take a main class or parent class and use the attributes from that parent class which are usually typical for most child classes and use them to to start as as base to start describing the more unique child classes.
 
 2. React:
+  created by facebook react was created to build webpages in a more scalable and efficient way.
 
 3. React state:
+  lives inside the constructor method and stores data that decides how the component behaves such as being dynamic or not.
 
 4. React lifecycle methods:
+  there are three catagories of lifecycle methods which include mounting, updating, and unmounting. this is the cycle react goes through starting form when it first renders to the DOM to when it is removed for the DOM. 
 
 5. DOM:
+  the document object model, is the visual representation of code that you see on the web.
