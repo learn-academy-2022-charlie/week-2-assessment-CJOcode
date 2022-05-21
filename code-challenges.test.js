@@ -36,21 +36,21 @@
 // // Expected output: "-7 is not divisible by three"
 
 //a describe method that lists the name of a function called divisibleByThree test.
-// describe("divisibleByThree", () => {
-//     // a test/it method, nested within the describe block, that in plain words, describes what that the function does.
-//     it("returns a string that tells you if the number is divisible by three", () => {
-//         const num1 = 15
-// // Expected output: "15 is divisible by three"
-//         const num2 = 0
-// // Expected output: "0 is divisible by three"
-//         const num3 = -7
-// // Expected output: "-7 is not divisible by three"
-//         //an expect method, nested within the test block, calling on the divisibleByThree function, followed by the .toEqual() matcher that checks the expected output of the function return.
-//         expect(divisibleByThree(15)).toEqual("is divisible by three")
-//         expect(divisibleByThree(0)).toEqual("is divisible by three")
-//         expect(divisibleByThree(-7)).toEqual("is not divisible by three")
-//     })
-// })
+describe("divisibleByThree", () => {
+    // a test/it method, nested within the describe block, that in plain words, describes what that the function does.
+    it("returns a string that tells you if the number is divisible by three", () => {
+        const num1 = 15
+// Expected output: "15 is divisible by three"
+        const num2 = 0
+// Expected output: "0 is divisible by three"
+        const num3 = -7
+// Expected output: "-7 is not divisible by three"
+        //an expect method, nested within the test block, calling on the divisibleByThree function, followed by the .toEqual() matcher that checks the expected output of the function return.
+        expect(divisibleByThree(15)).toEqual("is divisible by three")
+        expect(divisibleByThree(0)).toEqual("is divisible by three")
+        expect(divisibleByThree(-7)).toEqual("is not divisible by three")
+    })
+})
 // test had a GOOD failure.
 // FAIL  ./code-challenges.test.js
 // divisibleByThree
@@ -70,14 +70,14 @@
     // the function will have a conditional if/else statement using, num % 3 === 0
     // return a string stating "is divisible by three" if true, and "is not divisible by three" if false.
 
-// const divisibleByThree = (num) => {
-//     if (num % 3 === 0) {
-//         return "is divisible by three"
-//     } else {
-//         return "is not divisible by three"
-//     }
-// }
-//     divisibleByThree()
+const divisibleByThree = (num) => {
+    if (num % 3 === 0) {
+        return "is divisible by three"
+    } else {
+        return "is not divisible by three"
+    }
+}
+    divisibleByThree()
 
     // Code passed.
     // PASS  ./code-challenges.test.js
@@ -90,20 +90,20 @@
 // a) Create a test with expect statements for each of the variables provided.
 
 //a describe method that lists the name of a function called capitalizeWords test.
-// describe("capitalizeWords", () => {
-//     // a test/it method, nested within the describe block, that in plain words, describes what that the function does.
-//     it("returns an array with all words capitalized", () => {
+describe("capitalizeWords", () => {
+    // a test/it method, nested within the describe block, that in plain words, describes what that the function does.
+    it("returns an array with all words capitalized", () => {
 
-//         const randomNouns1 = ["streetlamp", "potato", "teeth", "conclusion", "nephew"]
-//         // Expected output: ["Streetlamp", "Potato", "Teeth", "Conclusion", "Nephew"]
-//         const randomNouns2 = ["temperature", "database", "chopsticks", "mango", "deduction"]
-//         // Expected output: ["Temperature", "Database", "Chopsticks", "Mango", "Deduction"]
+        const randomNouns1 = ["streetlamp", "potato", "teeth", "conclusion", "nephew"]
+        // Expected output: ["Streetlamp", "Potato", "Teeth", "Conclusion", "Nephew"]
+        const randomNouns2 = ["temperature", "database", "chopsticks", "mango", "deduction"]
+        // Expected output: ["Temperature", "Database", "Chopsticks", "Mango", "Deduction"]
 
-//         //an expect method, nested within the test block, calling on the divisibleByThree function, followed by the .toEqual() matcher that checks the expected output of the function return.
-//         expect(capitalizeWords(randomNouns1)).toEqual(["Streetlamp", "Potato", "Teeth", "Conclusion", "Nephew"])
-//         expect(capitalizeWords(randomNouns2)).toEqual(["Temperature", "Database", "Chopsticks", "Mango", "Deduction"])
-//     })
-// })
+        //an expect method, nested within the test block, calling on the divisibleByThree function, followed by the .toEqual() matcher that checks the expected output of the function return.
+        expect(capitalizeWords(randomNouns1)).toEqual(["Streetlamp", "Potato", "Teeth", "Conclusion", "Nephew"])
+        expect(capitalizeWords(randomNouns2)).toEqual(["Temperature", "Database", "Chopsticks", "Mango", "Deduction"])
+    })
+})
 
 // test had a GOOD failure
 // FAIL  ./code-challenges.test.js
@@ -122,12 +122,12 @@
     // the function will return the each sting in the array as uppercase using the .toUpperCase method
     // the function will start at the zero index of each string and stop at the first index
     
-// const capitalizeWords = (array) => {
-//     let eachString = array.map(string => {
-//         return string[0].toUpperCase() + string.substring(1)
-//     })
-//     return eachString
-// }
+const capitalizeWords = (array) => {
+    let eachString = array.map(string => {
+        return string[0].toUpperCase() + string.substring(1)
+    })
+    return eachString
+}
 
 // PASS  ./code-challenges.test.js
 // capitalizeWords
@@ -138,23 +138,23 @@
 // a) Create a test with expect statements for each of the variables provided.
 
 // a describe method that lists the name of a function called firstVowel test.
-// describe("firstVowel", () => {
-//     // a test/it method, nested within the describe block, that in plain words, describes what that the function does.
-//     it("returns the index of the first vowel in a string", () => {
+describe("firstVowel", () => {
+    // a test/it method, nested within the describe block, that in plain words, describes what that the function does.
+    it("returns the index of the first vowel in a string", () => {
 
-// //     const vowelTester1 = "learn"
-// // // Expected output: 1
-// //     const vowelTester2 = "academy"
-// // // Expected output: 0
-// //     const vowelTester3 = "challenges"
-// // // Expected output: 2
+    const vowelTester1 = "learn"
+// Expected output: 1
+    const vowelTester2 = "academy"
+// Expected output: 0
+    const vowelTester3 = "challenges"
+// Expected output: 2
 
-//         //an expect method, nested within the test block, calling on the firstVowel function, followed by the .toEqual() matcher that checks the expected output of the function return.
-//         expect(firstVowel()).toEqual(1)
-//         expect(firstVowel()).toEqual(0)
-//         expect(firstVowel()).toEqual(2)
-//     })
-// })
+        //an expect method, nested within the test block, calling on the firstVowel function, followed by the .toEqual() matcher that checks the expected output of the function return.
+        expect(firstVowel(vowelTester1)).toEqual([1])
+        expect(firstVowel(vowelTester2)).toEqual([0])
+        expect(firstVowel(vowelTester3)).toEqual([2])
+    })
+})
 // received GOOD failure
 // FAIL  ./code-challenges.test.js
 // firstVowel
@@ -167,18 +167,22 @@
 
 // b) Create the function that makes the test pass.
 
-    const vowelTester1 = "learn"
-// Expected output: 1
-    const vowelTester2 = "academy"
-// Expected output: 0
-    const vowelTester3 = "challenges"
-// Expected output: 2
+// Pseudo
+// create a function called firstVowel
+    // firstVowel will iterate through the letters in a string an output the index of the first vowel
+    // the function will have a for loop that will stop at the strings length 
+        // the loop will contain an if statement that looks for a vowel at  every index
+        // once the condition is met the function will return the index of the first vowel
 
 const firstVowel = (string) => {
-    if (string[i] === "a" || string[i] === "b" \)
-   
+    for (let i=0; i < string.length; i++){
+        if (string[i] === "a" || string[i] === "e" || string[i] === "i" || string[i] === "o" || string[i] === "u") {
+            return [i]
+        }
+    }
 }
-console.log(firstVowel(vowelTester1))
 
-// let vowelIndex = string.search("a","e","i","o","u")
-// return vowelIndex
+// code passes
+// PASS  ./code-challenges.test.js
+// firstVowel
+//   ✓ returns the index of the first vowel in a string (2 ms)
