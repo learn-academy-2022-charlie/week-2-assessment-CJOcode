@@ -34,23 +34,27 @@ Then, research the question to expand on your answer. Even if you feel you have 
     The method .map() iterates through an array returning a new array of the same length after it is invoked. While using .filter it will iterate through an array and pull out specified elements designated by the developer, returning them in new array.  
 
   Researched answer:
-    .map() will iterate through each individual value in an array 
+    .map() will iterate through each individual value in an array and returns a new array of the same length with the values changed to meet the condition of the function. While .filter() will only return the values that are truthy towards the condition you are asking for, so instead of changing the original array it just pulls the elements that are truthy out of the array an outputs them into a new one.
 
 
 
 4. What is the difference between a function and a method?
 
-  Your answer:
+  Your answer: 
+    A function is what developers use to have the computer do certain tasks. A method on the other hand is also a function but a method can have more than one function inside of it.
 
   Researched answer:
+    A function is a singular block of code that is designed by the developer to perform a particular task and can be called directly by it name. While methods are object oriented using it's function only when called by the name of its object and method name using dot notation. So for example, you could call on a function that multiples two values by 3 by just calling on its name and inputting two values in the parenthesis. While for the method you have to call on a objects name first following it with a .method().
 
 
 
 5. What is object destructuring?
 
   Your answer:
+    Object destructuring is taking a object and rearranging the contents to make it easier to access items and more understandable.
 
   Researched answer:
+    destructuring is a way for developers to pull codes out of arrays, objects or methods and assigning the values to a new variable. For example if we had an object that had keys that described a car we could assign the keys that describe paint color engine size and model to a variable named 
 
 
 
