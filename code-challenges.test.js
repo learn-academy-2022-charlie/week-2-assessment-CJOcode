@@ -100,8 +100,8 @@
 //         // Expected output: ["Temperature", "Database", "Chopsticks", "Mango", "Deduction"]
 
 //         //an expect method, nested within the test block, calling on the divisibleByThree function, followed by the .toEqual() matcher that checks the expected output of the function return.
-//         expect(capitalizeWords(randomNouns1)).toEqual("STREETLAMP", "POTATO", "TEETH", "CONCLUSION", "NEPHEW")
-//         expect(capitalizeWords(randomNouns2)).toEqual("TEMPERATURE", "DATABASE", "CHOPSTICKS", "MANGO", "DEDUCTION")
+//         expect(capitalizeWords(randomNouns1)).toEqual(["Streetlamp", "Potato", "Teeth", "Conclusion", "Nephew"])
+//         expect(capitalizeWords(randomNouns2)).toEqual(["Temperature", "Database", "Chopsticks", "Mango", "Deduction"])
 //     })
 // })
 
@@ -115,23 +115,70 @@
 //   ReferenceError: capitalizeWords is not defined
 
 // b) Create the function that makes the test pass.
-const randomNouns2 = ["temperature", "database", "chopsticks", "mango", "deduction"]
-const capitalizeWords = (array) => {
-    return array.map(string => string.toUpperCase)
-}
-console.log(capitalizeWords(randomNouns2))
 
+// create a function called capitalizeWords 
+    // the function will return an array with all the words capitalized
+    // use the .map method to filter through the arrays
+    // the function will return the each sting in the array as uppercase using the .toUpperCase method
+    // the function will start at the zero index of each string and stop at the first index
+    
+// const capitalizeWords = (array) => {
+//     let eachString = array.map(string => {
+//         return string[0].toUpperCase() + string.substring(1)
+//     })
+//     return eachString
+// }
+
+// PASS  ./code-challenges.test.js
+// capitalizeWords
+//   ✓ returns an array with all words capitalized (3 ms)
 
 // --------------------3) Create a function that takes in a string and logs the index of the first vowel.
 
 // a) Create a test with expect statements for each of the variables provided.
 
-const vowelTester1 = "learn"
-// Expected output: 1
-const vowelTester2 = "academy"
-// Expected output: 0
-const vowelTester3 = "challenges"
-// Expected output: 2
+// a describe method that lists the name of a function called firstVowel test.
+// describe("firstVowel", () => {
+//     // a test/it method, nested within the describe block, that in plain words, describes what that the function does.
+//     it("returns the index of the first vowel in a string", () => {
+
+// //     const vowelTester1 = "learn"
+// // // Expected output: 1
+// //     const vowelTester2 = "academy"
+// // // Expected output: 0
+// //     const vowelTester3 = "challenges"
+// // // Expected output: 2
+
+//         //an expect method, nested within the test block, calling on the firstVowel function, followed by the .toEqual() matcher that checks the expected output of the function return.
+//         expect(firstVowel()).toEqual(1)
+//         expect(firstVowel()).toEqual(0)
+//         expect(firstVowel()).toEqual(2)
+//     })
+// })
+// received GOOD failure
+// FAIL  ./code-challenges.test.js
+// firstVowel
+//   ✕ returns the index of the first vowel in a string (1 ms)
+
+// ● firstVowel › returns the index of the first vowel in a string
+
+//   ReferenceError: firstVowel is not defined
 
 
 // b) Create the function that makes the test pass.
+
+    const vowelTester1 = "learn"
+// Expected output: 1
+    const vowelTester2 = "academy"
+// Expected output: 0
+    const vowelTester3 = "challenges"
+// Expected output: 2
+
+const firstVowel = (string) => {
+    if (string[i] === "a" || string[i] === "b" \)
+   
+}
+console.log(firstVowel(vowelTester1))
+
+// let vowelIndex = string.search("a","e","i","o","u")
+// return vowelIndex
