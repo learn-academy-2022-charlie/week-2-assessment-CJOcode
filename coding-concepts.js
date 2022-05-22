@@ -82,7 +82,9 @@ class Learn {
   }
 }
 var learnStudent = new Learn("George")
-// console.log(learnStudent)
+ console.log(learnStudent)
 
-// a) Your answer:
+// a) Your answer: 
+  // This will log the class Learn with "George" as the students name, Bravo for the Cohort, and 2022 for the year.
 // b) Verify and explain:
+  // I was right, the output was Learn { student: 'George', cohort: 'Bravo', year: 2022 }. new creates a new instance of the class Learn and adds 'george' in as the students name.
