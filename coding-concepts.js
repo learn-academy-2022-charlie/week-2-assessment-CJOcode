@@ -46,11 +46,13 @@ var multBy2 = [4, 5, 6, 7, 8].map(value => value * 2)
 // --------------------4) What will this log?
 
 var onlyOdds = [11, 12, 13, 14, 15].filter(value => value % 2 !== 0)
-console.log(onlyOdds)
+// console.log(onlyOdds)
 
 // a) Your answer: 
   // This should log only th odd number in a new array  because its function is stating to log only the number that do not have a remainder of 0 when using the modulo of 2. The filter method takes the array and logs a new one of the the elements that are truthy to the condition.
 // b) Verify and explain: 
+  //I was correct, onlyOdds when called logged only its odd numbers in its array, [ 11, 13, 15 ]. .filter as said before logs the elements inside the array that are odd. The bang operator ! states the opposite of the loose equal sign. !== means that if a value when divided by 2 does not have a remainder of zero log that to the console.
+
   
 
 // --------------------5) What will this log?
@@ -61,10 +63,13 @@ var myCodingSkills = {
   databases: "PostgreSQL",
   versionControl: "GitHub"
 }
-// console.log(myCodingSkills.languages[0])
+console.log(myCodingSkills.languages[0])
 
-// a) Your answer:
-// b) Verify and explain:
+// a) Your answer: 
+  // This is calling on the languages key of the variable myCodingSkills and asking for the 0 index within the array. This should log JavaScript.
+// b) Verify and explain: 
+  // I was correct this logged JavaScript the console.log calls on the variable and uses dot notation and asks for the languages key and the 0th index within the languages key which is Javascript.
+
 
 
 // --------------------STRETCH: What will this log?
